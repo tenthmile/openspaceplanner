@@ -11,6 +11,7 @@
  */
 import { Attendance } from './attendance';
 import { Feedback } from './feedback';
+import { Difficutly } from './difficutly';
 import { Rating } from './rating';
 
 
@@ -21,6 +22,7 @@ export interface UpdateTopicRequest {
     owner?: string | null;
     roomId?: string | null;
     slotId?: string | null;
+    difficulty?: Difficutly | null;
     attendees: Array<Attendance>;
     demands: Array<string>;
     feedback: Array<Feedback>;

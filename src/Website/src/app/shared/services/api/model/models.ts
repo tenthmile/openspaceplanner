@@ -1,6 +1,7 @@
 export * from './addTopicFeedbackRequest';
 export * from './attendance';
 export * from './config';
+export * from './difficutly';
 export * from './feedback';
 export * from './rating';
 export * from './room';

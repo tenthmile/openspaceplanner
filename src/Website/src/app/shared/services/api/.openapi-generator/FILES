@@ -17,6 +17,7 @@ index.ts
 model/addTopicFeedbackRequest.ts
 model/attendance.ts
 model/config.ts
+model/difficutly.ts
 model/feedback.ts
 model/models.ts
 model/rating.ts
