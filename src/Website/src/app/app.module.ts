@@ -21,6 +21,7 @@ import { EditButtonDirective } from './shared/edit-button/edit-button.directive'
 import { ApiModule, Configuration } from './shared/services/api';
 import { SlotModalComponent } from './slot-modal/slot-modal.component';
 import { TopicModalComponent } from './topic-modal/topic-modal.component';
+import { DifficultySliderComponent } from './difficulty-slider/difficulty-slider.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { TopicModalComponent } from './topic-modal/topic-modal.component';
     ModalDialogComponent,
     SessionOverviewComponent,
     EditButtonDirective,
-    BusySpinnerComponent
+    BusySpinnerComponent,
+    DifficultySliderComponent
   ],
   imports: [
     BrowserModule,
