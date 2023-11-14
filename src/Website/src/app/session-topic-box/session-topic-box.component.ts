@@ -11,6 +11,7 @@ import tippy from "tippy.js";
 import { RatingStatistic } from '../models/ratingStatistic';
 import { SessionService } from "../session/session.service";
 import { Room, Slot, Topic } from '../shared/services/api';
+import { getDifficultyText } from '../session/session-util';
 
 @Component({
   selector: "app-session-topic-box",
@@ -269,4 +270,6 @@ export class SessionTopicBoxComponent implements OnInit {
     this.showAttendeesInput = true;
     setTimeout(() => this.topicAttendees.nativeElement.focus());
   }
+
+  getDifficultyTextI = getDifficultyText;
 }

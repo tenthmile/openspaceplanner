@@ -66,6 +66,10 @@
         </div>
       </div>
 
+      <div class="topic-additional-information" *ngIf="topic.difficulty">
+        <div class="difficulty-tag">{{ getDifficultyTextI(topic.difficulty.difficulty) }}</div>
+      </div>
+
       <div class="topic-additional-information">
         <div #ratingElement>
           <span class="fa fa-star"></span>

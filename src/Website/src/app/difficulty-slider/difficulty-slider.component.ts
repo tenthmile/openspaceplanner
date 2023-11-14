@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output, forwardRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR  } from '@angular/forms';
 import { Difficutly } from '../shared/services/api';
+import { getDifficultyText } from '../session/session-util';
 
 type NullableDifficulty = Difficutly | null | undefined;
 
@@ -68,27 +69,9 @@ export class DifficultySliderComponent implements ControlValueAccessor {
 
     if (value <= 0) {
       this.difficulty = null;
-      this.displayText = "no difficulty assigned";
     } else {
-      switch (value) {
-        case 1:
-          this.displayText = "easy";
-          break;
-        case 2:
-          this.displayText = "moderate";
-          break;
-        case 3:
-          this.displayText = "moderately difficult";
-          break;
-        case 4:
-          this.displayText = "difficult";
-          break;
-        case 5:
-          this.displayText = "very difficult";
-          break;
-      }
       this.difficulty = { difficulty: value };
     }
+    this.displayText = getDifficultyText(value);
   }
-
 }

@@ -1,2 +1,2 @@
 <input (change)="setDifficultyValue($event)" type="range" min="0" max="5" value="{{difficulty?.difficulty ?? 0}}" class="slider" id="difficulty">
-<span>{{displayText}}</span>
+<div><div [ngClass]="difficulty?.difficulty ? 'difficulty-tag' : ''">{{displayText}}</div></div>

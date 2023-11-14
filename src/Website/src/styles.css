@@ -31,3 +31,10 @@
 .drop-target {
     background-color: lightyellow;
 }
+
+.difficulty-tag {
+    background-color: #485fc7;
+    border-radius: 5px;
+    padding: 2px;
+    color: white;
+}
